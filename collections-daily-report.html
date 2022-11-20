@@ -228,30 +228,26 @@
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
-                    <ul class="metismenu list-unstyled" id="side-menu">
+                    <ul class="metismenu list-unstyled d-none" id="side-menu">
                         <li class="menu-title" key="t-menu">Desk Birdy</li>
                         <li>
                             <a href="index.html" class="waves-effect">
                                 <i class="bx bx-home-circle"></i><span>Dashboard</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-car-multiple"></i>
-                                <span>Drivers</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="driver-list.html">Drivers register</a></li>
-                                <li><a href="driver-request.html">Driver requests</a></li>
-                            </ul>
-                        </li>
 
                         <li>
-                            <a href="passengers.html" class="waves-effect">
-                                <i class="mdi mdi-account-cash"></i>
-                                <span>Passengers</span>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-account-group"></i>
+                                <span>System Users</span>
                             </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="driver-list.html">Drivers</a></li>
+                                <li><a href="driver-request.html">Clients</a></li>
+                                <li><a href="driver-request.html">Bowser Owners</a></li>
+                            </ul>
                         </li>
+                        
                         <li>
                             <a href="map-view.html" class="waves-effect">
                                 <i class="mdi mdi-map-marker"></i>
@@ -260,19 +256,22 @@
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-road-variant"></i>
-                                <span>Trips</span>
+                                <i class="mdi mdi-truck-fast"></i>
+                                <span>Deliveries</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li>
-                                    <a href="trips-request.html">Trip requests</a>
+                                    <a href="trips-request.html">All Deliveries</a>
                                 </li>
                                 <li>
-                                    <a href="trips-scheduled.html">Scheduled trips</a>
+                                    <a href="trips-request.html">Delivery requests</a>
                                 </li>
-                                <li><a href="trips-canceled.html">Canceled trips</a></li>
-                                <li><a href="trips-active.html">Active trips</a></li>
-                                <li><a href="trips-completed.html">Completed trips</a></li>
+                                <li>
+                                    <a href="trips-scheduled.html">Scheduled Deliveries</a>
+                                </li>
+                                <li><a href="trips-canceled.html">Canceled Deliveries</a></li>
+                                <li><a href="trips-active.html">Ongoing Deliveries</a></li>
+                                <li><a href="trips-completed.html">Completed Deliveries</a></li>
                             </ul>
                         </li>
 
@@ -293,6 +292,7 @@
                         </li>
 
 
+
                         <li>
                             <a href="settings.html" class="waves-effect">
                                 <i class="mdi mdi-cog"></i>
@@ -303,7 +303,7 @@
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-shield-account"></i>
-                                <span>System Users</span>
+                                <span>Admins</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="user-new.html">New User</a></li>
