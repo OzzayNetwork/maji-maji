@@ -43,10 +43,10 @@ var options = {
             }
         },
         series: [{
-            name: "Last week",
+            name: "Fullfiled Orders",
             data: [12, 36, 12, 45, 568, 14, 562, ]
         }, {
-            name: "This week",
+            name: "Canceled Orders",
             data: [124, 12, 256, 256, 256, 24, 23]
         }],
         xaxis: {
@@ -77,7 +77,7 @@ var options = {
         tooltip: {
             y: {
                 formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
-                    return numeral(value).format('0,0') + " Trips"
+                    return numeral(value).format('0,0') + " Liters"
 
                 }
             }

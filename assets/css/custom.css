@@ -884,3 +884,6 @@
                 body[data-sidebar=colored] .navbar-brand-box {
                     background-color: #3f51b5;
                 }
+                .fw-400{
+                    font-weight: 400 !important;
+                }

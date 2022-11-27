@@ -40,6 +40,8 @@
             </div>
         </div>
     </div>
+
+    
     <!-- Begin page -->
     <div id="layout-wrapper">
         <header id="page-topbar">
@@ -350,7 +352,7 @@
                                                 <div class="flex-grow-1 align-self-center">
                                                     <div class="text-muted">
                                                         <p class="mb-2">Welcome Back</p>
-                                                        <h5 class="mb-1">LeadCab Management System</h5>
+                                                        <h5 class="mb-1">Maji H20 </h5>
                                                         <p class="mb-0">Summary overview with filters for more personalized experience.</p>
                                                     </div>
                                                 </div>
@@ -368,20 +370,20 @@
                                                     </div>
                                                     <div class="col-2">
                                                         <div>
-                                                            <p class="text-muted text-truncate mb-2">Passengers</p>
-                                                            <h5 class="mb-0">6,639</h5>
+                                                            <p class="text-muted text-truncate mb-2">Water Bowsers</p>
+                                                            <h5 class="mb-0">230</h5>
                                                         </div>
                                                     </div>
                                                     <div class="col-3">
                                                         <div>
-                                                            <p class="text-muted text-truncate mb-2">New Pass</p>
-                                                            <h5 class="mb-0">+22</h5>
+                                                            <p class="text-muted text-truncate mb-2">Supplied Water</p>
+                                                            <h5 class="mb-0">22 K Li</h5>
 
                                                         </div>
                                                     </div>
                                                     <div class="col-2">
                                                         <div>
-                                                            <p class="text-muted text-truncate mb-2">New Drivers</p>
+                                                            <p class="text-muted text-truncate mb-2">Clients</p>
                                                             <h5 class="mb-0">+18</h5>
 
                                                         </div>
@@ -409,22 +411,58 @@
                     <!-- quick stats -->
                     <div class="row">
                         <div class="col-xl-4 px-sm-30px">
-                            <div class="card bg-primary bg-soft member-wedges-card">
+                            <div class="card bg-primary  member-wedges-card">
                                 <div>
                                     <div class="card-body">
-                                        <div class="d-flex flex-wrap align-items-start">
-                                            <h5 class="card-title mb-3 me-2">Driver dues</h5>
+                                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                            <h5 class="card-title me-2 mb-0 text-white">All Collected Revenue</h5>
+                                            <div>
+                                                <div class="dropdown">
+                                                    <button class="btn nav-btn" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bx bx-dots-horizontal-rounded text-white"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-end" style="">
+                                                        <a class="dropdown-item active" href="#">All Collected Revenue</a>
+                                                        <a class="dropdown-item" href="#">Water Sells Revenue</a>
+                                                        <a class="dropdown-item" href="#">Transport Revenue</a>
+                                                        <a class="dropdown-item" href="#">Maji Commision Revenue</a>
+                                                        <a class="dropdown-item" href="#">Bowser Earnings Revenue</a>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                         </div>
 
-                                        <div class="d-flex flex-wrap">
+                                        <div class="btn-group mb-2">
+                                            <button class="btn btn-link text-uppercase text-white dropdown-toggle btn-sm px-0 text-left pt-0 card-month-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Today <i class="mdi mdi-chevron-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item active" href="#">Today</a>
+                                                <a class="dropdown-item" href="#">Yesterday</a>
+                                                <a class="dropdown-item" href="#">Last Week</a>
+                                                <a class="dropdown-item" href="#">Custom Range</a>                                               
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap text-white">
                                             <div>
-                                                <p class="text-muted mb-1">Accumulated Debt by drivers This month</p>
-                                                <h4 class="mb-3 fw-bold">KES 130,512</h4>
-                                                <p class="text-success mb-0"><span>0.6 % <i class="mdi mdi-arrow-top-right ms-1"></i></span></p>
+                                               <div class="d-flex align-items-center mb-0">
+                                                    <div>
+                                                        <img src="assets/images/icons/money.png" class="img mr-3" style="height:40px; margin-right: 15px;" alt="Responsive image">
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-muted mb-1 text-white d-none">Collected Cash</p>
+                                                        <h4 class="mb-0 text-white fw-400">KES 130,512</h4>
+                                                    </div>
+                                               </div>
+                                               <div class="p-2 bg-white bg-opacity-25 d-none">
+                                                    <span>KES 2,456 Commisison</span>
+                                               </div>
+                                                <p class="text-success mb-0 text-white d-none"><span>0.6 % <i class="mdi mdi-arrow-top-right ms-1"></i></span></p>
                                             </div>
                                             <div class="ms-auto align-self-end">
-                                                <i class="mdi mdi-account-cash-outline display-4 text-light"></i>
+                                                <i class="mdi mdi-cash-check display-4 text-light opacity-50"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -443,7 +481,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="d-flex flex-column">
-                                                    <span>Trips</span>
+                                                    <span>Fullfiled Orders</span>
                                                     <div class="btn-group">
                                                         <button class="btn btn-link dropdown-toggle btn-sm px-0 text-left pt-0 card-month-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             Feb 2022 <i class="mdi mdi-chevron-down"></i>
@@ -461,7 +499,7 @@
                                                 </div>
                                             </div>
                                             <div class="text-muted mt-4">
-                                                <h4>132 Trips <i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <h4>132 Orders <i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
                                                 <div class="d-flex">
                                                     <span class="badge badge-soft-success font-size-12"> + 0.2% </span> <span class="ms-2 text-truncate">From previous period</span>
                                                 </div>
@@ -512,12 +550,12 @@
                                         <div class="card-body">
                                             <div class="d-flex align-items-center mb-3">
                                                 <div class="avatar-xs me-3">
-                                                    <span class="avatar-title rounded-circle bg-success bg-soft text-primary font-size-18">
-                                                        <i class="mdi mdi-cash-check  h2 mb-0 pb-0 text-success"></i>
+                                                    <span class="avatar-title rounded-circle bg-info bg-soft text-info font-size-18">
+                                                        <i class="mdi mdi-water  h2 mb-0 pb-0 text-info"></i>
                                                     </span>
                                                 </div>
                                                 <div class="d-flex flex-column">
-                                                    <span>Driver collections</span>
+                                                    <span>Water Deliveries</span>
                                                     <div class="btn-group">
                                                         <button class="btn btn-link dropdown-toggle btn-sm px-0 text-left pt-0 card-month-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                             Feb 2022 <i class="mdi mdi-chevron-down"></i>
@@ -535,7 +573,7 @@
                                                 </div>
                                             </div>
                                             <div class="text-muted mt-4">
-                                                <h4>KES 201,326<i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <h4>329,369 Li<i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
 
                                                 <div class="d-flex">
                                                     <span class="badge badge-soft-warning font-size-12"> 0% </span> <span class="ms-2 text-truncate">From previous period</span>
@@ -557,8 +595,8 @@
                                     <div class="float-end d-none">
                                         <a href="member-payments-all.html" class="btn btn-primary waves-effect waves-light text-white btn-sm"><i class="font-size-16 align-middle me-2 me-2 mdi-account-cash mdi"></i> Payments Table</a>
                                     </div>
-                                    <h4 class="card-title mb-0">Trips</h4>
-                                    <small class="mb-3 text-muted">Trips Comparison For last week and this week</small>
+                                    <h4 class="card-title mb-0">Order Quantities</h4>
+                                    <small class="mb-3 text-muted">Comparisons for Canceled and Fullfiled orders</small>
 
                                     <div>
                                         <div id="weekly-comparison" class="apex-charts" dir="ltr"></div>
