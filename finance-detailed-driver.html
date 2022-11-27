@@ -325,6 +325,129 @@
         <!-- ============================================================== -->
         <div class="main-content">
 
+             <!-- trip details modal -->
+             <div class="modal fade trip-details-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Kelvin's trip details</h5>
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="avatar-xs">
+                                        <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
+                                            <strong>KN</strong>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="flex-grow-1">
+                                    <h5 class="modal-title">Trip With Alex</h5>
+                                    <p class="mb-0 pb-0"><span class="text-muted">Sat, 26 Feb 2022</span></p>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3 row">
+                                <div class="col-12 pt-4">
+                                    <ul class="verti-timeline list-unstyled mt-3">
+                                        <li class="event-list active">
+                                            <div class="event-timeline-dot">
+                                                <i class="bx bxs-right-arrow-circle font-size-18"></i>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <h5 class="font-size-14">16:05 <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <div>
+                                                        Accra Road
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event-list">
+                                            <div class="event-timeline-dot">
+                                                <i class="bx bx-right-arrow-circle font-size-18"></i>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <h5 class="font-size-14">16:45 <i class="bx bx-right-arrow-alt font-size-16 text-primary align-middle ms-2"></i></h5>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <div>
+                                                        Embakasi
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-12 pt-4">
+                                    <h6 class="text-capitalize">Feedback and rating</h6>
+                                    <div class="bg-light p-3">
+                                        <p> Some feedback about how superb the driver was</p>
+                                        <div class="rating-star">
+                                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="5" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 pt-4">
+                                    <h6>Payment</h6>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Transportation Fee</td>
+                                                <td class="text-right">KES 250.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Distance Covered</td>
+                                                <td class="text-right">36 Km</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Order Quantity</td>
+                                                <td class="text-right">5,000 Li</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Order Value</td>
+                                                <td class="text-right">KES 12,236</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Total</th>
+                                                <th class="text-right">KES 12,486</th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Payment Method</th>
+                                                <th class="text-right">MPESA</th>
+                                            </tr>
+
+                                        </tfoot>
+
+                                    </table>
+
+                                </div>
+                            </div>
+                            <button class="btn btn-primary"><i class="bx bx-printer font-size-16 align-middle me-2"></i>Print Receipt</button>
+                            <button class="btn btn-outline-primary waves-effect"><i class="mdi mdi-email-send-outline font-size-16 align-middle me-2"></i>Resend Receipt</button>
+
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- trip details modal -->
+
             <div class="page-content">
                 <div class="container-fluid">
 
@@ -355,7 +478,7 @@
                                 <div class="card-header bg-white boarder-bottom-1">
                                     <div class="row d-flex justify-content-between">
                                         <div class="col-6">
-                                            <h4 class="card-title mb-0 text-capitalize">Finance report for <span>February 2022</span></h4>
+                                            <h4 class="card-title mb-0 text-capitalize"><span>February 2022</span> Finance report for Alex Wanjala </h4>
                                         </div>
 
                                         <div class="col-auto col-auto">
@@ -386,13 +509,13 @@
                                         <table id="datatable-buttons" class="table  nowrap w-100 table-striped">
                                             <thead class="table-dark">
                                                 <tr>
-                                                    <th>Driver</th>
+                                                    <th>Client</th>
                                                     <th>Plate No.</th>
-                                                    <th>Trips</th>
-                                                    <th title="Date Paid">Supply Qty</th>
-                                                    <th title="Payment Period">Distance</th>
-                                                    <th>Gross Revenue</th>
-                                                    <th>Transport Fees</th>
+                                                    <th>Destination</th>
+                                                    <th>Distance</th>
+                                                    <th title="Supply quantity in Litres">Supply Qty</th>
+                                                    <th class="text-right">Gross Revenue</th>
+                                                    <th class="text-right">Transport Fees</th>
                                                     <th class="text-right">Orders Val.</th>
                                                     <th class="text-right">Maji Commision</th>
                                                     <th></th>
@@ -400,14 +523,14 @@
                                             </thead>
                                             <tfoot class="table-light">
                                                 <tr>
-                                                    <th colspan="2">23 Drivers</th>
-                                                    <td>631 Trips</td>
-                                                    <td>300,000 Li</td>
+                                                    <th colspan="2">23 Clients</th>
+                                                    <td>23 Trips</td>
                                                     <td>562 KM</td>
-                                                    <td>
+                                                    <td>300,000 Li</td>
+                                                    <td class="text-right">
                                                         <span class="text-black fw-semibold">KES 2,630,365</span>
                                                     </td>
-                                                    <td>
+                                                    <td class="text-right">
                                                        KES 456,230
                                                     </td>
                                                     <td class="text-right text-info">KES 2,174,135</td>
@@ -418,253 +541,133 @@
                                             <tbody class="table-striped">
                                                 <tr>
                                                     <td>
-                                                        <a href="driver-details.html">Alex Wanjala</a>
+                                                        <a href="passenger-details.html">Kelvin Njuguna</a>
                                                     </td>
                                                     <td>
                                                         KAD 567T
                                                     </td>
-                                                    <td>
-                                                        25
+                                                    <td>Junction, Ngong Road, Kingara Rd, Nairobi</td>
+                                                    <td>31 Km</td>
+                                                    <td>15,000 Li</td>
+                                                    <td class="text-right text-uppercase text-black fw-semibold">kes 20,500</td>
+                                                    
+                                                    <td class="text-uppercase text-right">
+                                                        <span class="">KES 500</span>
                                                     </td>
-                                                    <td>56,630 Li</td>
-                                                    <td>36 KM</td>
-                                                    <td class="text-uppercase">
-                                                        <span class="text-black fw-semibold">kes 670,000</span>
-                                                    </td>
-                                                    <td>
-                                                        KES 230,000
-                                                    </td>
+                                                    <td class="text-right text-uppercase">kes 20,000</td>
                                                     <td class="text-right text-uppercase text-info">
-                                                        KES 440,000
+                                                        KES 6,000
                                                     </td>
                                                    
-                                                    <td class="text-right text-uppercase">
-                                                        <strong class="text-success">KES 132,000</strong>
-                                                    </td>
                                                     <td>
-                                                        <div class="dropdown">
-                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                                            </a>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                            </div>
-                                                        </div>
+                                                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target=".trip-details-modal">Details</button>
+                                                        
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>
-                                                        <a href="driver-details.html">Alex Wanjala</a>
+                                                        <a href="passenger-details.html">Kelvin Njuguna</a>
                                                     </td>
                                                     <td>
                                                         KAD 567T
                                                     </td>
-                                                    <td>
-                                                        25
+                                                    <td>Junction, Ngong Road, Kingara Rd, Nairobi</td>
+                                                    <td>31 Km</td>
+                                                    <td>15,000 Li</td>
+                                                    <td class="text-right text-uppercase text-black fw-semibold">kes 20,500</td>
+                                                    
+                                                    <td class="text-uppercase text-right">
+                                                        <span class="">KES 500</span>
                                                     </td>
-                                                    <td>56,630 Li</td>
-                                                    <td>36 KM</td>
-                                                    <td class="text-uppercase">
-                                                        <span class="text-black fw-semibold"><span class="text-black fw-semibold">kes 670,000</span></span>
-                                                    </td>
-                                                    <td>
-                                                        KES 230,000
-                                                    </td>
+                                                    <td class="text-right text-uppercase">kes 20,000</td>
                                                     <td class="text-right text-uppercase text-info">
-                                                        KES 440,000
+                                                        KES 6,000
                                                     </td>
                                                    
-                                                    <td class="text-right text-uppercase">
-                                                        <strong class="text-success">KES 132,000</strong>
-                                                    </td>
                                                     <td>
-                                                        <div class="dropdown">
-                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                                            </a>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                            </div>
-                                                        </div>
+                                                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target=".trip-details-modal">Details</button>
+                                                        
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>
-                                                        <a href="driver-details.html">Alex Wanjala</a>
+                                                        <a href="passenger-details.html">Kelvin Njuguna</a>
                                                     </td>
                                                     <td>
                                                         KAD 567T
                                                     </td>
-                                                    <td>
-                                                        25
+                                                    <td>Junction, Ngong Road, Kingara Rd, Nairobi</td>
+                                                    <td>31 Km</td>
+                                                    <td>15,000 Li</td>
+                                                    <td class="text-right text-uppercase text-black fw-semibold">kes 20,500</td>
+                                                    
+                                                    <td class="text-uppercase text-right">
+                                                        <span class="">KES 500</span>
                                                     </td>
-                                                    <td>56,630 Li</td>
-                                                    <td>36 KM</td>
-                                                    <td class="text-uppercase">
-                                                        <span class="text-black fw-semibold">kes 670,000</span>
-                                                    </td>
-                                                    <td>
-                                                        KES 230,000
-                                                    </td>
+                                                    <td class="text-right text-uppercase">kes 20,000</td>
                                                     <td class="text-right text-uppercase text-info">
-                                                        KES 440,000
+                                                        KES 6,000
                                                     </td>
                                                    
-                                                    <td class="text-right text-uppercase">
-                                                        <strong class="text-success">KES 132,000</strong>
-                                                    </td>
                                                     <td>
-                                                        <div class="dropdown">
-                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                                            </a>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                            </div>
-                                                        </div>
+                                                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target=".trip-details-modal">Details</button>
+                                                        
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>
-                                                        <a href="driver-details.html">Alex Wanjala</a>
+                                                        <a href="passenger-details.html">Kelvin Njuguna</a>
                                                     </td>
                                                     <td>
                                                         KAD 567T
                                                     </td>
-                                                    <td>
-                                                        25
+                                                    <td>Junction, Ngong Road, Kingara Rd, Nairobi</td>
+                                                    <td>31 Km</td>
+                                                    <td>15,000 Li</td>
+                                                    <td class="text-right text-uppercase text-black fw-semibold">kes 20,500</td>
+                                                    
+                                                    <td class="text-uppercase text-right">
+                                                        <span class="">KES 500</span>
                                                     </td>
-                                                    <td>56,630 Li</td>
-                                                    <td>36 KM</td>
-                                                    <td class="text-uppercase">
-                                                        <span class="text-black fw-semibold">kes 670,000</span>
-                                                    </td>
-                                                    <td>
-                                                        KES 230,000
-                                                    </td>
+                                                    <td class="text-right text-uppercase">kes 20,000</td>
                                                     <td class="text-right text-uppercase text-info">
-                                                        KES 440,000
+                                                        KES 6,000
                                                     </td>
                                                    
-                                                    <td class="text-right text-uppercase">
-                                                        <strong class="text-success">KES 132,000</strong>
-                                                    </td>
                                                     <td>
-                                                        <div class="dropdown">
-                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                                            </a>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                            </div>
-                                                        </div>
+                                                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target=".trip-details-modal">Details</button>
+                                                        
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>
-                                                        <a href="driver-details.html">Alex Wanjala</a>
+                                                        <a href="passenger-details.html">Kelvin Njuguna</a>
                                                     </td>
                                                     <td>
                                                         KAD 567T
                                                     </td>
-                                                    <td>
-                                                        25
+                                                    <td>Junction, Ngong Road, Kingara Rd, Nairobi</td>
+                                                    <td>31 Km</td>
+                                                    <td>15,000 Li</td>
+                                                    <td class="text-right text-uppercase text-black fw-semibold">kes 20,500</td>
+                                                    
+                                                    <td class="text-uppercase text-right">
+                                                        <span class="">KES 500</span>
                                                     </td>
-                                                    <td>56,630 Li</td>
-                                                    <td>36 KM</td>
-                                                    <td class="text-uppercase">
-                                                        <span class="text-black fw-semibold">kes 670,000</span>
-                                                    </td>
-                                                    <td>
-                                                        KES 230,000
-                                                    </td>
+                                                    <td class="text-right text-uppercase">kes 20,000</td>
                                                     <td class="text-right text-uppercase text-info">
-                                                        KES 440,000
+                                                        KES 6,000
                                                     </td>
                                                    
-                                                    <td class="text-right text-uppercase">
-                                                        <strong class="text-success">KES 132,000</strong>
-                                                    </td>
                                                     <td>
-                                                        <div class="dropdown">
-                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                                            </a>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                            </div>
-                                                        </div>
+                                                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target=".trip-details-modal">Details</button>
+                                                        
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="driver-details.html">Alex Wanjala</a>
-                                                    </td>
-                                                    <td>
-                                                        KAD 567T
-                                                    </td>
-                                                    <td>
-                                                        25
-                                                    </td>
-                                                    <td>56,630 Li</td>
-                                                    <td>36 KM</td>
-                                                    <td class="text-uppercase">
-                                                        <span class="text-black fw-semibold">kes 670,000</span>
-                                                    </td>
-                                                    <td>
-                                                        KES 230,000
-                                                    </td>
-                                                    <td class="text-right text-uppercase text-info">
-                                                        KES 440,000
-                                                    </td>
-                                                   
-                                                    <td class="text-right text-uppercase">
-                                                        <strong class="text-success">KES 132,000</strong>
-                                                    </td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                <i class="bx bx-dots-vertical-rounded"></i>
-                                                            </a>
-    
-                                                            <div class="dropdown-menu dropdown-menu-end">
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
-    
-    
                                             </tbody>
                                         </table>
                                     </div>

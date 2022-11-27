@@ -384,7 +384,7 @@ function initMap() {
                         
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Pickup
+                         Base Location
                         </span>
                             <div>
                             90 Degrees by TSAVO, Nairobi, Kenya
@@ -460,7 +460,7 @@ function initMap() {
                         
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Pickup
+                         Base Location
                         </span>
                             <div>
                             90 Degrees by TSAVO, Nairobi, Kenya
@@ -535,7 +535,7 @@ function initMap() {
                         
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Pickup
+                         Base Location
                         </span>
                             <div>
                             90 Degrees by TSAVO, Nairobi, Kenya
@@ -611,7 +611,7 @@ function initMap() {
                             
                             <div class="flex-grow-1">
                             <span class="text-muted">
-                             Pickup
+                             Base Location
                             </span>
                                 <div>
                                 90 Degrees by TSAVO, Nairobi, Kenya
@@ -686,7 +686,7 @@ function initMap() {
                         
                         <div class="flex-grow-1">
                         <span class="text-muted">
-                         Pickup
+                         Base Location
                         </span>
                             <div>
                             90 Degrees by TSAVO, Nairobi, Kenya
@@ -946,7 +946,7 @@ function initMap() {
                             
                             <div class="flex-grow-1">
                             <span class="text-muted">
-                             Pickup
+                             Base Location
                             </span>
                                 <div>
                                 90 Degrees by TSAVO, Nairobi, Kenya
@@ -1023,7 +1023,7 @@ function initMap() {
                             
                             <div class="flex-grow-1">
                             <span class="text-muted">
-                             Pickup
+                             Base Location
                             </span>
                                 <div>
                                 90 Degrees by TSAVO, Nairobi, Kenya
@@ -1356,7 +1356,7 @@ function initMap() {
         axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
                 params: {
                     address: location,
-                    key: 'AIzaSyDPgvqooIilziYaCgsf8DAYt2AacDYxODU'
+                    key: 'AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8'
                 }
 
 
@@ -1632,7 +1632,7 @@ function initMap() {
 
     // reverse geo coding
     function reverseGeocoding(Latitude, longitude) {
-        const KEY = "AIzaSyDPgvqooIilziYaCgsf8DAYt2AacDYxODU";
+        const KEY = "AIzaSyAGPbYfcYqdbSBeXdIpH5iWrznfU886Qk8";
         const LAT = -1.270102;
         const LNG = 36.8589333;
         let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${Latitude},${longitude}&key=${KEY}`;
